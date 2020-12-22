@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Meteo</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<p th:text="'L\'adresse est : ' + ${nomAdresse} + ' !'" />
+		<p th:text="'La meteo est : ' + ${meteo} + ' et il fait ' + ${temp}+ ' !'" />
+	</body>
+</html>
