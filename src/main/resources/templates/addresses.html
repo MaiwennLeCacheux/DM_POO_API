@@ -1,17 +1,9 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<title>Adresses</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" href="addresses.css" />
-	</head>
+	<header th:insert="fragments/general.html :: headerfiles"> </header>
+
 	<body>
-		<header>
-			<ul>
-				 <li><a href="adresses">Addresses</a></li>
-				 <li><a href="greeting">Greeting</a></li>
-			</ul>
-		</header>
+	<header th:insert="fragments/general.html :: header"> </header>
 		<h1>Les differentes adresses</h1>
 		<ul th:each="address: ${allAddresses}">
 			<li th:text="${address.content}  + ' - par ' + ${address.auteur}" />

@@ -1,10 +1,9 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<title>Formulaire Adresse</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	</head>
+	<header th:insert="fragments/general.html :: headerfiles"> </header>
+
 	<body>
+		<header th:insert="fragments/general.html :: header"> </header>
 		<form action="meteo" method="post">
 		  <label for="form-adresse">Please input your adress :</label>
 		  <input type="text" id="form-adresse" name="form-adresse"><br><br>

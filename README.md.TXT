@@ -41,7 +41,7 @@ C'est " model.addAttribute("nomTemplate", nameGET); " qui sert à envoyer le nom
 
 
 ## ETAPE 17
-Le dossier "INFORMATION_SCHEMA" s'est créé, ainsi que la table "ADRESS3
+Le dossier "INFORMATION_SCHEMA" s'est créé, ainsi que la table "ADRESS"
 
 ## ETAPE 18
 Le template Hibernate de Spring est ajouté au projet via les dépendences et permet ensuite d'effectuer les manipulations de données (insertion, sélection, mise à jour et suppression) dans la base de données.
@@ -52,6 +52,13 @@ J'ai effectué la requête "SELECT * FROM ADDRESS" et en réponse j'ai bien eu u
 
 ## ETAPE 23
 L'annotation @Autowired permet de marquer une dépendance que Spring va par la suite résoudre et injecter, c'est-à-dire que l'on signifie à Spring que l'on a besoin d'utiliser une dépendance ici.
+
+## ETAPE 30
+J'ai d'abord inséré la dépendance de Boostrap dans le fichier pom.xml
+Puis dans le fichier general.html contenant mon fragment de navbar j'ai rajouté les liens de style et de script vers bootstrap
+Enfin j'ai déclaré une navbar utilisant Boostrap
+Cette navbar est insérée partout sur le site en utilisant les fragments
+
 
 # Partie 2
 
@@ -80,3 +87,6 @@ L'API OpenWeatherMap utilise la methode GET, pour envoyer les données à notre 
  
  
  # Lien GitHub
+ 
+ https://github.com/MaiwennLeCacheux/DM_POO_API.git
+ 
